@@ -8,16 +8,15 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 	    @Id
 	    private String id;
-	    private String fileName;       // Name of the file
-	    private String fileUrl;        // URL where the file is stored (e.g., S3 URL)
-	    private String ownerUsername;  // Username of the file owner (the uploader)
-	    private String role;           // Role of the user who uploaded the file (Designer, Manager, Admin)
+	    private String fileName;       
+	    private String fileUrl;        
+	    private String ownerUsername;  
+	    private String role;           
 
 	    // Default constructor
 	    public File() {
 	    }
 
-	    // Constructor to initialize fields
 	    public File(String fileName, String fileUrl, String ownerUsername, String role) {
 	        this.fileName = fileName;
 	        this.fileUrl = fileUrl;
